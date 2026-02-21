@@ -31,44 +31,51 @@
 
     <div class="container-fluid">
         <div class="row">
-
             <!-- Sidebar -->
+            <!-- Desktop sidebar -->
             <nav class="col-lg-3 col-md-4 d-none d-md-flex text-white vh-100 sticky-top flex-column align-items-center py-5"
                 style="background-color: rgb(14, 83, 187);">
-                <div class="offcanvas-md offcanvas-start col-lg-3 col-md-4 text-white vh-100 sticky-top flex-column align-items-center py-5"
-                    tabindex="-1" id="sidebar" style="background-color: rgb(14, 83, 187);">
 
-                    <!-- mobile only -->
-                    <div class="offcanvas-header d-md-none">
-                        <h5 class="offcanvas-title text-white">BAKED BLISS</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
-                        </button>
-                    </div>
-
-                    <div class="offcanvas-body d-flex flex-column align-items-center">
-
-                        <div class="text-center mb-5">
-                            <img src="./pastry-bag.png" alt="icon" height="100px">
-                            <h4 class="fw-bold mt-2">BAKED BLISS</h4>
-                        </div>
-
-                        <ul class="nav flex-column w-100 text-center">
-                            <li class="nav-item"><a href="#welcome" class="nav-link text-white-50">Home</a></li>
-                            <li class="nav-item"><a href="#about" class="nav-link text-white-50">About</a></li>
-                            <li class="nav-item"><a href="#lattes" class="nav-link text-white-50">Pastries</a></li>
-                            <li class="nav-item"><a href="#mojitos" class="nav-link text-white-50">Drinks</a></li>
-                            <li class="nav-item"><a href="#contact" class="nav-link text-white-50">Contact</a></li>
-                        </ul>
-
-                    </div>
+                <div class="text-center mb-5">
+                    <img src="./pastry-bag.png" height="100">
+                    <h4 class="fw-bold mt-2">BAKED BLISS</h4>
                 </div>
+
+                <ul class="nav flex-column w-100 text-center">
+                    <li class="nav-item"><a href="#welcome" class="nav-link text-white-50">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-white-50">About</a></li>
+                    <li class="nav-item"><a href="#lattes" class="nav-link text-white-50">Pastries</a></li>
+                    <li class="nav-item"><a href="#mojitos" class="nav-link text-white-50">Drinks</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white-50">Contact</a></li>
+                </ul>
+
             </nav>
+
+            <!-- Mobile -->
+            <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="sidebar"
+                style="background-color: rgb(14, 83, 187);">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">BAKED BLISS</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body text-center">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link text-white-50" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white-50" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-white-50" href="#">Pastries</a></li>
+                        <li class="nav-item"><a class="nav-link text-white-50" href="#">Drinks</a></li>
+                        <li class="nav-item"><a class="nav-link text-white-50" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
 
             <!-- Main Content -->
             <main class="col-lg-9 col-md-8 p-0">
 
                 <!-- Hero Section -->
-                <div class="w-100 overflow-hidden" style="height:400px;">
+                <div class="w-100 overflow-hidden" style="height:400px;" id="welcome">
                     <img src="https://i.pinimg.com/736x/59/ba/f5/59baf5853213b8c9c85831c4b92874a2.jpg"
                         class="img-fluid w-100 h-100 object-fit-cover">
                 </div>
