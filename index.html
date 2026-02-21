@@ -17,31 +17,51 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
 
 <body>
+    <button class="btn btn-primary d-md-none m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
     <div class="container-fluid">
         <div class="row">
 
             <!-- Sidebar -->
             <nav class="col-lg-3 col-md-4 d-none d-md-flex text-white vh-100 sticky-top flex-column align-items-center py-5"
                 style="background-color: rgb(14, 83, 187);">
+                <div class="offcanvas-md offcanvas-start col-lg-3 col-md-4 text-white vh-100 sticky-top flex-column align-items-center py-5"
+                    tabindex="-1" id="sidebar" style="background-color: rgb(14, 83, 187);">
 
-                <div class="text-center mb-5">
-                    <img src="./pastry-bag.png" alt="icon" height="100px">
-                    <h4 class="fw-light mt-2 fw-bold">BAKED BLISS</h4>
+                    <!-- mobile only -->
+                    <div class="offcanvas-header d-md-none">
+                        <h5 class="offcanvas-title text-white">BAKED BLISS</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body d-flex flex-column align-items-center">
+
+                        <div class="text-center mb-5">
+                            <img src="./pastry-bag.png" alt="icon" height="100px">
+                            <h4 class="fw-bold mt-2">BAKED BLISS</h4>
+                        </div>
+
+                        <ul class="nav flex-column w-100 text-center">
+                            <li class="nav-item"><a href="#welcome" class="nav-link text-white-50">Home</a></li>
+                            <li class="nav-item"><a href="#about" class="nav-link text-white-50">About</a></li>
+                            <li class="nav-item"><a href="#lattes" class="nav-link text-white-50">Pastries</a></li>
+                            <li class="nav-item"><a href="#mojitos" class="nav-link text-white-50">Drinks</a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link text-white-50">Contact</a></li>
+                        </ul>
+
+                    </div>
                 </div>
-
-                <ul class="nav flex-column w-100 text-center">
-                    <li class="nav-item"><a href="#welcome" class="nav-link text-white-50">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link text-white-50">About</a></li>
-                    <li class="nav-item"><a href="#lattes" class="nav-link text-white-50">Pastries</a></li>
-                    <li class="nav-item"><a href="#mojitos" class="nav-link text-white-50">Drinks</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link text-white-50">Contact</a></li>
-                </ul>
-
             </nav>
 
             <!-- Main Content -->
@@ -57,7 +77,8 @@
                 <section class="p-5">
                     <h2 class="text-info mb-4">Welcome to Baked Bliss</h2>
                     <p class="text-muted">
-                        At <span class="fw-bold" style="font-size: 20px;">Baked Bliss</span>, every pastry tells a story of sweetness and joy. We are a modern neighborhood
+                        At <span class="fw-bold" style="font-size: 20px;">Baked Bliss</span>, every pastry tells a story
+                        of sweetness and joy. We are a modern neighborhood
                         bakery
                         dedicated to crafting artisanal treats in a warm and inviting space. From flaky croissants to
                         delicately glazed tarts, every bite is prepared with precision, premium ingredients, and a dash
@@ -75,9 +96,10 @@
                                 class="img-fluid shadow-sm rounded-3 w-100 object-fit-cover" style="height: 400px;">
                         </div>
                         <div class="col-md-7">
-                            <h4 class="text-info mb-3">About the team</h4>
+                            <h4 class="text-info mb-3" id="about">About the team</h4>
                             <p class="text-secondary">
-                                Behind <span class="fw-bold" style="font-size: 20px;">Baked Bliss</span> is a passionate team of pastry chefs, artisanal bakers, and dessert
+                                Behind <span class="fw-bold" style="font-size: 20px;">Baked Bliss</span> is a passionate
+                                team of pastry chefs, artisanal bakers, and dessert
                                 lovers who
                                 believe in the art of the perfect bake. We carefully source the finest flours, seasonal
                                 fruits, and rich chocolates, focusing on traditional techniques to bring you the most
